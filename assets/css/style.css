@@ -1,62 +1,261 @@
-body {
+*
+{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
-
-header h1 {
-    background-color: #235eff;
-
-}
-
-img {text-align: center;
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
-
-.work {
-    float: right;
+body
+{
     text-align: center;
 }
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #2B85FD;
+    margin: 5em 5em 0 5em;
+    padding: 0;
+}
+.header-subheader
+{
+    margin-top: 10px;
+    font-weight: 100;
+}
+.bio
+{
+    padding: 100px 0  100px 0;
+    width: 100%;
+}
+.bio article img
+{
+    margin-top: 20px;
+    max-width: 50%;
+}
+.bio h2
+{
+    font-family: 'Raleway', sans-serif;
+}
+.bio p
+{
+    font-family: 'Raleway', sans-serif;
+}
+.contact-form
+{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 150px;
+}
+.contact-form a
+{
+    text-decoration: none;
+}
+.contact-form p
+{
+    text-align: left;
+    position: relative;
+}
+.contact-form a p
+{
+    color: #2B85FD;
+    padding: 0 -90px;
+}
+.work
+{
+    margin-bottom: 50px;
+}
+.work h2
+{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 60px;
+}
+.work hr 
+{
+    margin-top: 1em;
+}
+.work div img
+{
+    max-width: 100%;
+    border: 1px solid #d80059;
+}
+.work div
+{
+    padding-top: 60px;
+}
+.bio article p
+{
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 1;
+}
+header 
+{
+    margin-top: 70px;
+}
+header h1
+{
+    font-family: 'KoHo', sans-serif;
+    margin-top: 15px;
+}
+header hr 
+{
+    margin: 1em 5em;
+}
+header nav 
+{
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2B85FD;
+}
+header nav p
+{
+    color: #fff16c;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    padding: 6px 10px;
+    line-height: 1.5;
+}
+footer
+{
+    font-size: 11px;
+    font-family: sans-serif;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
 
 
 
+@media only screen and (min-width: 768px)
+{
+    .bio article img
+    {
+        max-width: 25%;
+    }
+    .contact-form
+    {
+        margin:  50px 150px 0;
+    }
+    .work div a img
+    {
+        float: left;
+        width: 20%;
+        margin-left: 6rem;
+    }
+    .placeholder-block
+    {
+        display: inline;
+    }
+    .placeholder-img /* the actual images that are referenced in the above rule */
+    {
+        width: 20%;
+        margin: 5px;
+    }
+    .work div
+    {
+        background-color: #e1f0f5;
+        padding-bottom: 45px;
+    }
+    .work h2
+    {
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #2B85FD;
+    }
+    .work hr
+    {
+        display: none;
+    }
+    .work div a img
+    {
+        display: inline-block;
+        width: 40%;
+    }
+    .bio
+    {
+        background-color: #fff16c;
+    }
+    .bio article p
+    {
+        padding: 30px 30px 100px 30px;
+        font-size: 24px;
+    }
+    .bio h2
+    {
+        color: #2B85FD;
+    }
+    .resumay
+    {
+        font-family: 'Raleway', sans-serif;
+        margin:  50px 150px 0;
+    }
+    .resumay a
+    {
+        text-decoration: none;
+    }
+    header
+    {
+        background-image: url(banner.jpg);
+    }
+    header nav p
+    {
+        margin: 0 30px;
+    }
+    h2
+    {
+        font-size: 30px;
+    }
+}
 
 
+@media only screen and (min-width: 1344px) /* while I'm coding this on my second (bigger) screen, my laptop screen width is only 1344px, so due to time constraints, I set the max width at my laptop's screen's width settings, so for desktop version it looks best at a width of 1344px. */
+{
+    .avatar
+    {
+        display: block;
+        background-image: url(./me.JPG);
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        background-position: top center;
+        border-radius: 50%;
+    }
+    .bio article img
+    {
+        max-width: 10%;
+    }
+    .contact-form
+    {
+        margin: 50px 0 0 150px;
+    }
+    .header h1
+    {
+        background-color: #4f4f4f;
+    }
+    .placeholder-block
+    {
+        display: inline;
+    }
+    .placeholder-img /* the actual images that are referenced in the above rule */
+    {
+        width: 20%;
+        margin: 5px;
+    }
+    .resumay
+    {
+        margin:  50px 150px 0;
+        display: block;
+    }
+    .work div a img
+    {
+        display: inline-block;
+        margin-left: 5em;
+        width: 40%;
+    }
+    nav {
+        margin: 0 40px;
+    };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
